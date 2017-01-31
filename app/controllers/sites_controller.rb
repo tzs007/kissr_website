@@ -27,18 +27,7 @@ class SitesController < ApplicationController
   end
 
   def site_params
-    params.require(:site).permit(:name)
-  end
-
-  def authorize
-    unless signed_in?
-
-      if params[:site]
-        session[:site_name] = params[:site][:name]
-      end
-
-      redirect_to oauth.start
-    end
+    params.require(:site).permit(:domain)
   end
 
   def redirect_unless_subscriber

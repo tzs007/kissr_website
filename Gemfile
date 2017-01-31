@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.2.3"
+
 gem 'bootstrap-sass'
 gem 'bourbon'
 gem 'coffee-rails', '~> 4.0.0'
@@ -8,7 +10,9 @@ gem 'haml'
 gem 'httparty'
 gem 'dotenv-rails'
 gem 'high_voltage'
+gem 'inline_svg'
 gem 'jquery-rails'
+gem 'lodash-rails'
 gem 'oauth2'
 gem 'pg'
 gem 'pry'

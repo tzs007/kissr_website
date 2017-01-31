@@ -15,21 +15,84 @@
     opacity: 0
   to
     opacity: 1
+svg.dropbox
+  width: 100px
 
 .input-group-lg .input-group-addon, .input-group-lg .form-control, .btn-lg
   font-size: 2.5em
 
 .input-group-lg .form-control
   height: 68px
+.user-menu
+  a
+    margin: 0 7px
+    font-size: 1.3em
+    text-transform: uppercase
+    color: #3d464d
+    &:hover
+      text-decoration: none
+      color: lighten(#3d464d, 20%)
+body.home
+  .container
+    width: 1170px
+  h3
+    color: #000
+  #new_site
+    width: 800px
+    margin: 0 auto
+    .form-group
+      float: left
+    input[type='submit']
+      margin-left: 35px
+      float: right
+  p
+    font-size: 1.15em
+    color: #889297
+  .icon
+    display: block
+    float: left
+    padding-bottom: 50px
+    &.infinity
+      padding: 0 10px
+      font-size: 5em
+      position: relative
+      top: -10px
+      color: #3D3F99
+    &.money
+      padding-right: 14px
+      padding-top: 10px
+      font-size: 4em
+      color: #30b661
+  header
+    h1
+      a
+        color: #fff
+    border-bottom: none
+  .user-menu
+    a
+      color: #daeaf0
+      &:hover
+        color: #fff
+body
+  margin: 0
+  padding: 0
+.top
+  margin: 0
+  padding: 0
+  color: #fff
+  @include radial-gradient(circle at 50% 50%, #53b8de 29%, #55a0dd 120%)
+  //background-color: #53b8de
+  .container
+    margin: 0 auto
 
 .hero
-  border: 1px solid #ccc
+  margin-top: 0
   margin-bottom: 20px
   h1
-    @include animation(fadeIn 2s ease-in)
+    @include animation(fadeIn 1s ease-in)
     margin-top: 0
     text-align: center
-    padding: 5em 0
+    padding: 4em 0
 .pages-show
   .content h1
 .player
@@ -41,7 +104,7 @@
 .play
   padding: 10px 30px
   border-radius: 5px
-  background-color: #FAA732
+  background-color: #fff
   height: 30px
   width: 20px
   &:hover
